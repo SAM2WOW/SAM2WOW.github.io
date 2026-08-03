@@ -53,3 +53,25 @@ may vary by button.
 The animated GIF dividers in `assets/dividers/` were mirrored from
 [Pixel Safari](https://pixelsafari.neocities.org/dividers/) at the user's
 request. They retain their original artwork and animation.
+
+## Social media icons
+
+The small brand marks in `assets/social-icons/` are sourced from
+[Simple Icons](https://simpleicons.org/). The icon library is distributed under
+CC0-1.0; the individual brand names and logos remain trademarks of their
+respective owners.
+
+## Candy Candy player artwork
+
+The `Candy Candy` cover displayed in the mini player is a low-resolution copy
+of the official regular-edition artwork published by
+[Warner Music Japan](https://wmg.jp/kyary/discography/8216/). Copyright remains
+with its respective rights holders.
+
+## Windows Media Player logo
+
+`assets/audio/windows-media-player-logo.svg` is based on the Windows Media
+Player simplified logo from
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Windows_Media_Player_simplified_logo.svg),
+where the simple geometric logo is identified as public domain. Windows Media
+Player and its logo may still be trademarks of Microsoft.

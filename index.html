@@ -12,13 +12,16 @@
     <meta property="og:title" content="My ARX Space" />
     <link rel="icon" type="image/jpeg" href="assets/arx-profile.jpg" />
     <link rel="apple-touch-icon" href="assets/arx-profile.jpg" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/aero-components.css" />
-    <link rel="stylesheet" href="css/demo.css" />
-    <script src="js/button-marquee.js" defer></script>
+    <link rel="stylesheet" href="css/base.css?v=20260803-16" />
+    <link rel="stylesheet" href="css/aero-components.css?v=20260803-16" />
+    <link rel="stylesheet" href="css/demo.css?v=20260803-18" />
+    <script src="js/button-marquee.js?v=20260803-18" defer></script>
+    <script src="js/media-player.js?v=20260803-14" defer></script>
   </head>
   <body>
     <main class="profile-stage">
+      <div class="page-columns">
+        <div class="main-column">
       <section class="aero-window msn-window" aria-labelledby="profile-name">
         <div class="aero-window__titlebar">
           <div class="aero-window__title">
@@ -37,7 +40,7 @@
             <img class="msn-logo" src="assets/msn-messenger-logo.png" alt="" aria-hidden="true" />
             <span class="msn-banner__text">
               <strong>ARX Messenger</strong>
-              <small>your personal space</small>
+              <small>your personal internet creature <img class="toro-emoji" src="assets/emoji/toro/toroangel.gif" alt="Toro angel" /></small>
             </span>
             <span class="msn-banner__sparkle" aria-hidden="true">✦</span>
           </header>
@@ -63,14 +66,14 @@
             </div>
 
             <div class="msn-identity">
-              <p class="msn-presence"><span aria-hidden="true"></span> Online</p>
+              <p class="msn-presence"><span aria-hidden="true"></span> Online </p>
               <h1 id="profile-name">
                 <img class="pixel-emoji pixel-emoji--title" src="assets/emoji/star.png" alt="Glowing star" />
                 <strong>ARX</strong>
                 <img class="pixel-emoji pixel-emoji--title" src="assets/emoji/mango.png" alt="Mango" />
                 <img class="pixel-emoji pixel-emoji--title" src="assets/emoji/warning.png" alt="Warning" />
               </h1>
-              <p class="msn-handle">@FluffyArx</p>
+              <p class="msn-handle"><a href="https://x.com/FluffyArx" target="_blank" rel="me noopener">@FluffyArx</a> <img class="toro-emoji" src="assets/emoji/toro/torostars.gif" alt="Toro with stars" /></p>
 
               <div class="msn-message">
                 <span class="msn-message__label">Personal message</span>
@@ -78,26 +81,30 @@
                   92% Mango Wolf
                   <img class="pixel-emoji" src="assets/emoji/wolf.png" alt="Wolf" />
                   <img class="pixel-emoji" src="assets/emoji/mango.png" alt="Mango" />
+                  <img class="toro-emoji" src="assets/emoji/toro/toroberry.gif" alt="Toro with a berry" />
                   /
                   <img class="pixel-emoji pixel-emoji--flag" src="assets/emoji/rainbow-flag.png" alt="Rainbow flag" />
+                  <img class="toro-emoji" src="assets/emoji/toro/rainbowtoro.gif" alt="Rainbow Toro" />
                   <img class="pixel-emoji pixel-emoji--flag" src="assets/emoji/china-flag.png" alt="Flag of China" />
-                  / 26<img class="pixel-emoji" src="assets/emoji/adult.png" alt="Adults only" />
+                  / 26<img class="toro-emoji" src="assets/emoji/toro/torocatholic.gif" alt="Toro praying" />
                   /
                   <img class="pixel-emoji" src="assets/emoji/speaking.png" alt="Speaking" />
                   <img class="pixel-emoji pixel-emoji--flag" src="assets/emoji/us-outlying-flag.png" alt="Flag of the United States Minor Outlying Islands" />
                   <img class="pixel-emoji pixel-emoji--flag" src="assets/emoji/japan-flag.png" alt="Flag of Japan" />
-                  / Welcome to my website
+                  / <img class="toro-emoji" src="assets/emoji/toro/toroloveyou.gif" alt="Toro saying I love you" /> Welcome to my website
                 </p>
               </div>
 
               <div class="msn-status-line">
                 <span class="msn-status-line__icon" aria-hidden="true">✉</span>
-                <span>Signed in as <strong>@FluffyArx</strong></span>
+                <span>Signed in as <strong><a href="https://x.com/FluffyArx" target="_blank" rel="me noopener">@FluffyArx</a></strong> </span>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <img class="pixel-divider" src="assets/dividers/rainbow-stars.gif" alt="" aria-hidden="true" />
 
       <section class="web-button-marquee" aria-label="Scrolling retro website buttons">
         <div class="web-button-marquee__track">
@@ -106,19 +113,14 @@
         </div>
       </section>
 
-      <div class="pixel-divider-stack" aria-hidden="true">
-        <img src="assets/dividers/rainbow-stars.gif" alt="" />
-        <img src="assets/dividers/cat.gif" alt="" />
-        <img src="assets/dividers/hanging-stars.gif" alt="" />
-        <img src="assets/dividers/rainbow-blood.gif" alt="" />
-      </div>
+
+      <img class="pixel-divider" src="assets/dividers/hanging-stars.gif" alt="" aria-hidden="true" />
+
 
       <section class="aero-window status-window" aria-labelledby="status-title">
         <div class="aero-window__titlebar">
           <div class="aero-window__title">
-            <span class="aero-window__icon aero-window__icon--green" aria-hidden="true">
-              <img class="pixel-emoji pixel-emoji--caption" src="assets/emoji/sushi.png" alt="" />
-            </span>
+            <img class="toro-emoji" src="assets/emoji/toro/torobangbang.gif" alt="Excited Toro" />
             <span>Website construction</span>
           </div>
           <div class="aero-window__controls" aria-label="Window controls">
@@ -134,8 +136,11 @@
           </figure>
 
           <div class="status-window__content" role="status">
-            <h2 id="status-title">Arx is eating sushi right now!!</h2>
-            <p>Constructing the website...</p>
+            <h2 id="status-title">Arx is eating sushi right now!! <img class="toro-emoji" src="assets/emoji/toro/toroexclaim.gif" alt="Surprised Toro" /></h2>
+            <p>Constructing the website... <img class="toro-emoji" src="assets/emoji/toro/tororavew.gif" alt="Toro dancing" /></p>
+
+            <img class="pixel-divider" src="assets/dividers/cat.gif" alt="" aria-hidden="true" />
+            <p> </p>
 
             <div
               class="aero-progress status-window__progress"
@@ -147,26 +152,139 @@
             >
               <div class="aero-progress__fill" style="--progress: 67%"></div>
             </div>
-            <small>67% complete · please wait warmly</small>
+            <small>72% complete · please wait for me</small>
           </div>
         </div>
       </section>
 
+      <img class="pixel-divider" src="assets/dividers/rainbow-blood.gif" alt="" aria-hidden="true" />
+
+        </div>
+
+        <aside class="side-column" aria-label="Social media sidebar">
+      <section class="aero-window social-window" aria-labelledby="social-title">
+        <div class="aero-window__titlebar">
+          <div class="aero-window__title">
+            <img class="toro-emoji" src="assets/emoji/toro/toroupvote.gif" alt="Toro giving an upvote" />
+            <span id="social-title">Social Media </span>
+          </div>
+          <div class="aero-window__controls" aria-label="Window controls">
+            <button class="aero-caption-button" type="button" aria-label="Minimize"></button>
+            <button class="aero-caption-button" type="button" aria-label="Maximize"></button>
+            <button class="aero-caption-button aero-caption-button--close" type="button" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="aero-window__body social-window__body">
+          <p class="social-window__intro">Find me around the world wide web :3</p>
+          <nav class="social-links" aria-label="ARX social media links">
+            <a class="aero-button social-link" href="https://t.me/FluffyArx" target="_blank" rel="me noopener"><span class="social-icon social-icon--telegram" aria-hidden="true"><img src="assets/social-icons/telegram.svg" alt="" /></span><span>Telegram</span></a>
+            <a class="aero-button social-link" href="https://space.bilibili.com/1997202864" target="_blank" rel="me noopener"><span class="social-icon social-icon--bilibili" aria-hidden="true"><img src="assets/social-icons/bilibili.svg" alt="" /></span><span>Bilibili</span></a>
+            <a class="aero-button social-link" href="https://x.com/FluffyArx" target="_blank" rel="me noopener"><span class="social-icon social-icon--x" aria-hidden="true"><img src="assets/social-icons/x.svg" alt="" /></span><span>X / Twitter</span></a>
+            <a class="aero-button social-link" href="https://discord.com/users/fluffyarx" target="_blank" rel="me noopener"><span class="social-icon social-icon--discord" aria-hidden="true"><img src="assets/social-icons/discord.svg" alt="" /></span><span>Discord</span></a>
+            <a class="aero-button social-link" href="https://www.tiktok.com/@fluffyarx" target="_blank" rel="me noopener"><span class="social-icon social-icon--tiktok" aria-hidden="true"><img src="assets/social-icons/tiktok.svg" alt="" /></span><span>TikTok</span></a>
+            <a class="aero-button social-link" href="https://www.twitch.tv/fluffyarxtv" target="_blank" rel="me noopener"><span class="social-icon social-icon--twitch" aria-hidden="true"><img src="assets/social-icons/twitch.svg" alt="" /></span><span>Twitch</span></a>
+            <a class="aero-button social-link" href="https://www.youtube.com/@fluffyarx" target="_blank" rel="me noopener"><span class="social-icon social-icon--youtube" aria-hidden="true"><img src="assets/social-icons/youtube.svg" alt="" /></span><span>YouTube</span></a>
+            <a class="aero-button social-link" href="https://www.furaffinity.net/user/fluffyarx/" target="_blank" rel="me noopener"><span class="social-icon social-icon--fa" aria-hidden="true"><img src="assets/social-icons/furaffinity.svg" alt="" /></span><span>Fur Affinity</span></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="wmp-window" aria-label="Windows Media Player mini player" data-wmp-player>
+        <div class="wmp-window__body">
+          <audio data-wmp-audio preload="metadata" src="assets/audio/candy-candy-web.mp3"></audio>
+
+          <div class="wmp-screen">
+            <img class="wmp-cover" src="assets/audio/candy-candy-cover.jpg" alt="Candy Candy single cover" />
+            <div class="wmp-track-info">
+              <strong>Candy Candy</strong>
+              <span>Kyary Pamyu Pamyu</span>
+              <small><span data-wmp-status>Ready · 64 kbps</span><span data-wmp-time>0:00 / 3:51</span></small>
+            </div>
+          </div>
+
+          <div class="wmp-seek-rail">
+            <input class="wmp-seek" data-wmp-seek type="range" min="0" max="1000" value="0" aria-label="Song position" />
+          </div>
+
+          <div class="wmp-controls">
+            <span class="wmp-logo" title="Windows Media Player" aria-hidden="true"><img src="assets/audio/windows-media-player-logo.svg" alt="" /></span>
+            <button class="wmp-control wmp-control--stop" data-wmp-stop type="button" aria-label="Stop"></button>
+            <button class="wmp-control wmp-control--previous" type="button" aria-label="Previous track" disabled></button>
+            <button class="wmp-control wmp-control--play" data-wmp-play type="button" aria-label="Play"></button>
+            <button class="wmp-control wmp-control--next" type="button" aria-label="Next track" disabled></button>
+            <button class="wmp-control wmp-control--speaker" data-wmp-mute type="button" aria-label="Mute"></button>
+            <label class="wmp-volume"><input data-wmp-volume type="range" min="0" max="1" step="0.05" value="0.8" aria-label="Volume" /></label>
+          </div>
+        </div>
+      </section>
+
+      <section class="aero-window maimai-window" aria-labelledby="maimai-title">
+        <div class="aero-window__titlebar">
+          <div class="aero-window__title">
+            <img class="maimai-window__app-icon" src="assets/maimai/icon-star.png" alt="" aria-hidden="true" />
+            <span id="maimai-title">maimai DX NET</span>
+          </div>
+          <div class="aero-window__controls" aria-label="Window controls">
+            <button class="aero-caption-button" type="button" aria-label="Minimize"></button>
+            <button class="aero-caption-button" type="button" aria-label="Maximize"></button>
+            <button class="aero-caption-button aero-caption-button--close" type="button" aria-label="Close"></button>
+          </div>
+        </div>
+
+        <div class="aero-window__body maimai-window__body">
+          <div class="maimai-player-card">
+            <img class="maimai-player-card__avatar" src="assets/maimai/arx-avatar.jpg" alt="ARXWOLF maimai profile picture" />
+            <div class="maimai-player-card__details">
+              <img class="maimai-player-card__trophy" src="assets/maimai/trophy-title.png" alt="ドクター・キドリです" />
+
+              <div class="maimai-player-card__identity">
+                <div class="maimai-player-card__name">ＡＲＸＷＯＬＦ☆</div>
+                <div class="maimai-player-card__rating" aria-label="DX rating 13812">
+                  <img src="assets/maimai/rating-base-silver.png" alt="" aria-hidden="true" />
+                  <span>13812</span>
+                </div>
+              </div>
+
+              <img class="maimai-player-card__divider" src="assets/maimai/divider.png" alt="" aria-hidden="true" />
+
+              <div class="maimai-player-card__ranks">
+                <img src="assets/maimai/course-rank-7.png" alt="Course rank: 7th dan" />
+                <img src="assets/maimai/class-rank-b5.png" alt="Class rank: B5" />
+                <span class="maimai-player-card__stars"><img src="assets/maimai/icon-star.png" alt="Stars" />×49</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="maimai-window__derakkuma" src="assets/maimai/derakkuma.png" alt="Derakkuma" />
+      </section>
+
+      <img class="pixel-divider" src="assets/dividers/starspink.gif" alt="" aria-hidden="true" />
+
+      <section class="web-stamp-marquee" aria-label="Scrolling web stamp collection">
+        <div class="web-stamp-marquee__track">
+          <div class="web-stamp-marquee__group" data-stamp-group></div>
+          <div class="web-stamp-marquee__group" data-stamp-group aria-hidden="true"></div>
+        </div>
+      </section>
+        </aside>
+      </div>
+
       <aside class="popup-zone" aria-label="Y2K popup animation gallery">
         <figure class="popup-ad popup-ad--1">
-          <div class="popup-ad__bar"><span>COOL_GIF.EXE</span><button type="button" aria-label="Close popup">×</button></div>
+          <div class="popup-ad__bar"><span>COOL_IGAKU.EXE</span><button type="button" aria-label="Close popup">×</button></div>
           <img src="assets/popups/popup-01-animation.gif" alt="Small blue character dancing on a platform" />
           <figcaption>★ DOWNLOAD NOW! ★</figcaption>
         </figure>
 
         <figure class="popup-ad popup-ad--2">
-          <div class="popup-ad__bar"><span>OMG_WOLF!!!</span><button type="button" aria-label="Close popup">×</button></div>
+          <div class="popup-ad__bar"><span>OMG_HIIII!!!</span><button type="button" aria-label="Close popup">×</button></div>
           <img src="assets/popups/popup-02-astd0w.gif" alt="Costumed character dancing outdoors" />
-          <figcaption>YOU ARE VISITOR #0067</figcaption>
+          <figcaption>YOU ARE VISITOR #001</figcaption>
         </figure>
 
         <figure class="popup-ad popup-ad--3">
-          <div class="popup-ad__bar"><span>HOT_ANIME.GIF</span><button type="button" aria-label="Close popup">×</button></div>
+          <div class="popup-ad__bar"><span>WOLF_IN_UR_AREA.GIF</span><button type="button" aria-label="Close popup">×</button></div>
           <img src="assets/popups/popup-03-butt.gif" alt="Blue animated character against a circular graphic background" />
           <figcaption>CLICK 4 MORE!!!</figcaption>
         </figure>
