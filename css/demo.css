@@ -1,0 +1,360 @@
+/* Page layout only. The Messenger card itself lives in aero-components.css. */
+
+body {
+  overflow-x: hidden;
+  background:
+    linear-gradient(rgba(5, 35, 51, 0.18), rgba(3, 19, 34, 0.38)),
+    url("../assets/arx-y2k-background.jpg") center center / cover fixed no-repeat;
+}
+
+.profile-stage {
+  position: relative;
+  display: grid;
+  width: min(100% - 28px, 760px);
+  min-height: 100vh;
+  margin-inline: auto;
+  padding: clamp(52px, 10vh, 110px) 0 70px;
+  place-items: center;
+  gap: 26px;
+}
+
+.msn-window,
+.status-window {
+  z-index: 5;
+}
+
+.status-window {
+  width: min(100%, 680px);
+}
+
+.status-window__body {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  padding: 18px;
+  background: linear-gradient(#fff, #edf5fa);
+}
+
+.status-window__picture {
+  overflow: hidden;
+  margin: 0;
+  padding: 4px;
+  border: 1px solid #758c98;
+  background: linear-gradient(#fff, #c9dce5);
+  box-shadow: inset 0 0 0 1px white, 2px 2px 4px rgba(38, 74, 91, 0.24);
+}
+
+.status-window__picture img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 746 / 602;
+  border: 1px solid #a5b5bc;
+  background: #8b8b8b;
+  image-rendering: auto;
+  object-fit: cover;
+}
+
+.status-window__content h2 {
+  margin: 0 0 7px;
+  color: #154d72;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.status-window__content p {
+  margin: 0 0 14px;
+  color: #405c6c;
+  font-size: 12px;
+}
+
+.status-window__progress {
+  margin-bottom: 6px;
+}
+
+.status-window__content small {
+  color: #6b7e88;
+  font-size: 10px;
+}
+
+/* Scrolling collection of unique 88×31 website buttons. */
+.web-button-marquee {
+  position: relative;
+  z-index: 5;
+  width: min(100%, 680px);
+  height: 60px;
+  overflow: hidden;
+  border: 1px solid #23c6df;
+  border-radius: 3px;
+  background:
+    radial-gradient(circle at 9% 25%, rgba(255, 255, 255, 0.95) 0 1px, transparent 2px),
+    radial-gradient(circle at 72% 68%, rgba(255, 255, 255, 0.85) 0 1px, transparent 2px),
+    radial-gradient(circle at 41% 78%, rgba(77, 223, 232, 0.35) 0 2px, transparent 3px),
+    linear-gradient(100deg, rgba(255, 255, 255, 0.94), rgba(207, 255, 250, 0.96) 48%, rgba(225, 251, 255, 0.94));
+  background-size: 46px 38px, 61px 45px, 73px 52px, auto;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.92), 0 2px 6px rgba(22, 95, 116, 0.22);
+}
+
+.pixel-divider-stack {
+  z-index: 5;
+  display: grid;
+  width: min(100%, 680px);
+  justify-items: center;
+  gap: 3px;
+  pointer-events: none;
+}
+
+.pixel-divider-stack img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  filter: drop-shadow(1px 2px 1px rgba(13, 53, 70, 0.28));
+}
+
+.web-button-marquee::before,
+.web-button-marquee::after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  width: 18px;
+  pointer-events: none;
+  content: "";
+}
+
+.web-button-marquee::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(226, 255, 254, 0.95), transparent);
+}
+
+.web-button-marquee::after {
+  right: 0;
+  background: linear-gradient(-90deg, rgba(226, 255, 254, 0.95), transparent);
+}
+
+.web-button-marquee__track {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  will-change: transform;
+  animation: web-button-scroll 65s linear infinite;
+}
+
+.web-button-marquee:hover .web-button-marquee__track {
+  animation-play-state: paused;
+}
+
+.web-button-marquee__group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 5px 14px 0;
+}
+
+.web-button-marquee__group img {
+  position: relative;
+  display: block;
+  width: 88px;
+  height: 31px;
+  flex: 0 0 auto;
+  image-rendering: auto;
+  transition: filter 90ms ease, transform 90ms ease;
+}
+
+.web-button-marquee__group img:hover {
+  z-index: 3;
+  outline: 2px solid #fff85a;
+  outline-offset: 1px;
+  filter: brightness(1.25) saturate(1.35) drop-shadow(0 0 5px #fff) drop-shadow(0 0 5px #29dfff);
+  transform: scale(1.12);
+}
+
+@keyframes web-button-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* This decorative marquee is intentionally animated even when the operating
+   system requests reduced motion; hovering always pauses it immediately. */
+@media (prefers-reduced-motion: reduce) {
+  .web-button-marquee__track {
+    animation-duration: 65s !important;
+    animation-iteration-count: infinite !important;
+  }
+}
+
+/* Intentionally obnoxious personal-homepage popup gallery. */
+.popup-zone {
+  width: 100%;
+}
+
+.popup-ad {
+  --popup-accent: #1159c7;
+  position: fixed;
+  z-index: 3;
+  width: 174px;
+  margin: 0;
+  padding: 3px;
+  border: 2px outset #eef6ff;
+  color: #000;
+  background: #d6d6d6;
+  box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.42);
+  font-family: Arial, Helvetica, sans-serif;
+  animation: popup-jitter 1.4s steps(2, end) infinite alternate;
+}
+
+.popup-ad:nth-child(even) {
+  --popup-accent: #7b1ac8;
+  animation-delay: -0.7s;
+}
+
+.popup-ad__bar {
+  display: flex;
+  height: 21px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+  color: white;
+  background: linear-gradient(90deg, #071a73, var(--popup-accent));
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-shadow: 1px 1px #000;
+}
+
+.popup-ad__bar button {
+  display: grid;
+  width: 18px;
+  height: 17px;
+  margin-right: 2px;
+  padding: 0;
+  place-items: center;
+  border: 2px outset #eee;
+  border-radius: 0;
+  color: #000;
+  background: #d6d6d6;
+  font: 700 12px/1 Arial, sans-serif;
+  text-shadow: none;
+}
+
+.popup-ad img {
+  display: block;
+  width: 100%;
+  height: 116px;
+  margin-top: 3px;
+  border: 1px inset #fff;
+  background: #000;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.popup-ad figcaption {
+  padding: 5px 2px 3px;
+  color: #f0008c;
+  background: #ffff61;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 1px 1px #fff;
+}
+
+.popup-ad--1 {
+  top: 4vh;
+  left: 2vw;
+  transform: rotate(-2deg);
+}
+
+.popup-ad--2 {
+  top: 38vh;
+  left: 5vw;
+  transform: rotate(1.5deg);
+}
+
+.popup-ad--3 {
+  bottom: 3vh;
+  left: 1.5vw;
+  transform: rotate(-1deg);
+}
+
+.popup-ad--4 {
+  top: 5vh;
+  right: 2vw;
+  transform: rotate(2deg);
+}
+
+.popup-ad--5 {
+  top: 39vh;
+  right: 5vw;
+  transform: rotate(-1.5deg);
+}
+
+.popup-ad--6 {
+  right: 1.5vw;
+  bottom: 3vh;
+  transform: rotate(1deg);
+}
+
+@keyframes popup-jitter {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 2px -2px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .profile-stage {
+    align-content: center;
+  }
+
+  .popup-zone {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .popup-ad {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    transform: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .profile-stage {
+    padding-block: 26px;
+  }
+
+  .popup-zone {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .popup-ad img {
+    height: 105px;
+  }
+
+  .status-window__body {
+    grid-template-columns: 1fr;
+  }
+
+  .status-window__picture {
+    width: min(100%, 260px);
+    justify-self: center;
+  }
+
+  .status-window__content {
+    text-align: center;
+  }
+}
