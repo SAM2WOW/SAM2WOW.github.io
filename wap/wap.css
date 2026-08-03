@@ -1,0 +1,269 @@
+/* Low-data stylesheet for Opera Mini and classic 240/320px mobile screens. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #173e58;
+  background: #75c8ea;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: center;
+}
+
+#page {
+  width: 94%;
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 7px 0 12px;
+  text-align: left;
+}
+
+#top {
+  margin-bottom: 7px;
+  padding: 7px 8px;
+  border: 1px solid #196493;
+  color: #ffffff;
+  background: #126fa8;
+  text-shadow: 1px 1px 0 #06476d;
+}
+
+#top strong {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+#top span {
+  float: right;
+  padding-top: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.notice {
+  margin: 0 0 8px;
+  padding: 6px 7px;
+  border: 1px solid #d3a100;
+  color: #5a4300;
+  background: #fff7bf;
+  font-size: 11px;
+}
+
+.window {
+  margin: 0 0 9px;
+  padding: 3px;
+  border: 1px solid #163e58;
+  background: #3f94c8;
+}
+
+.titlebar {
+  min-height: 18px;
+  padding: 3px 6px;
+  border-bottom: 1px solid #1b5e86;
+  color: #062d49;
+  background: #bde9fb;
+  font-weight: bold;
+  line-height: 18px;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+
+.status-dot,
+.online {
+  color: #168d18;
+}
+
+.content {
+  padding: 8px;
+  border: 1px solid #ffffff;
+  color: #263e4c;
+  background: #f8fdff;
+}
+
+.content p {
+  margin: 4px 0 8px;
+}
+
+a {
+  color: #075b9b;
+}
+
+a:visited {
+  color: #70458f;
+}
+
+.avatar {
+  float: left;
+  display: block;
+  margin: 0 9px 5px 0;
+  padding: 3px;
+  border: 1px solid #7e9fb0;
+  background: #d9f7ff;
+}
+
+.identity {
+  min-width: 0;
+}
+
+.identity h1 {
+  margin: 0;
+  color: #166d9d;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.identity .online {
+  margin: 0 0 2px;
+  font-size: 10px;
+}
+
+.message {
+  padding: 5px;
+  border: 1px solid #c4d8e2;
+  color: #415966;
+  background: #edf7fb;
+  font-size: 11px;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.sparkles {
+  margin: -2px 0 6px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 0 #17729d;
+}
+
+.intro {
+  color: #305b73;
+  font-size: 12px;
+  text-align: center;
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links li {
+  margin: 4px 0;
+}
+
+.links a {
+  display: block;
+  padding: 6px 8px;
+  border: 1px solid #78a7bf;
+  color: #124e72;
+  background: #dff5ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h2 {
+  margin: 6px 0 2px;
+  color: #155b82;
+  font-size: 15px;
+}
+
+.sushi {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #829da9;
+}
+
+.progress {
+  height: 13px;
+  margin: 7px 0 3px;
+  padding: 2px;
+  border: 1px solid #768d99;
+  background: #ffffff;
+  text-align: left;
+}
+
+.progress span {
+  display: block;
+  width: 72%;
+  height: 13px;
+  background: #45b943;
+}
+
+.small {
+  color: #607783;
+  font-size: 10px;
+}
+
+.game img {
+  float: left;
+  margin: 0 9px 0 0;
+  border: 2px solid #7ab8d6;
+}
+
+.game p {
+  line-height: 1.45;
+}
+
+.nav {
+  margin: 7px 0;
+  padding: 7px;
+  border: 1px solid #1373a5;
+  color: #184965;
+  background: #dff7ff;
+  text-align: center;
+}
+
+.nav p {
+  margin: 5px 0 0;
+  font-size: 10px;
+}
+
+.footer {
+  padding: 3px;
+  color: #ffffff;
+  font-size: 9px;
+  line-height: 1.5;
+  text-align: center;
+  text-shadow: 1px 1px 0 #165a7f;
+}
+
+@media screen and (max-width: 260px) {
+  #page {
+    width: 96%;
+  }
+
+  #top span {
+    display: block;
+    float: none;
+    padding: 0;
+  }
+
+  .avatar {
+    float: none;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 6px;
+  }
+
+  .identity {
+    text-align: center;
+  }
+
+  .message {
+    text-align: left;
+  }
+}

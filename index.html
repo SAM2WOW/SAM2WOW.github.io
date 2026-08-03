@@ -10,7 +10,21 @@
     <title>My ARX Space</title>
     <meta name="application-name" content="My ARX Space" />
     <meta name="theme-color" content="#55c9f3" />
+    <script>
+      (function () {
+        var userAgent = navigator.userAgent || "";
+        var operaMini = /Opera Mini/i.test(userAgent);
+        var classicHandset = /NokiaBrowser|Nokia|Asha|Series[ -]?40|S40|Symbian|MIDP|J2ME|UP\.Browser|UP\.Link|NetFront|Obigo|Teleca/i.test(userAgent) && !/Android|iPhone/i.test(userAgent);
+        var classicMobile = operaMini || classicHandset;
+        var fullSiteRequested = /(?:\?|&)full=1(?:&|$)/.test(window.location.search);
+
+        if (classicMobile && !fullSiteRequested) {
+          window.location.replace("wap/");
+        }
+      })();
+    </script>
     <link rel="canonical" href="https://arxu.gay/" />
+    <link rel="alternate" media="handheld" href="https://arxu.gay/wap/" title="Low-data version" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="My ARX Space" />
