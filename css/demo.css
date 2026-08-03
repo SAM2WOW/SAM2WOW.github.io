@@ -934,6 +934,42 @@ body {
   filter: drop-shadow(1px 2px 1px rgba(13, 53, 70, 0.28));
 }
 
+.site-footer {
+  position: relative;
+  z-index: 5;
+  max-width: 100%;
+  padding: 3px 6px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000, 0 0 4px rgba(0, 0, 0, 0.85);
+}
+
+.site-footer::before,
+.site-footer::after {
+  color: inherit;
+  content: "★";
+}
+
+.site-footer::before {
+  margin-right: 6px;
+}
+
+.site-footer::after {
+  margin-left: 6px;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
 .web-button-marquee::before,
 .web-button-marquee::after {
   position: absolute;
