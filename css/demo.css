@@ -1353,6 +1353,16 @@ body {
     padding-block: 26px;
   }
 
+  .profile-nav {
+    gap: 6px;
+  }
+
+  .profile-nav__button {
+    min-width: 0;
+    flex: 1;
+    padding-inline: 10px;
+  }
+
   .popup-zone {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

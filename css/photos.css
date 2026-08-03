@@ -193,15 +193,6 @@ body {
     padding-inline: 0;
   }
 
-  .profile-nav {
-    gap: 6px;
-  }
-
-  .profile-nav__button {
-    min-width: 0;
-    flex: 1;
-    padding-inline: 10px;
-  }
 }
 
 @media (max-width: 360px) {
