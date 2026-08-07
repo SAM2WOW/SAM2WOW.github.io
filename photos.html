@@ -12,15 +12,25 @@
     <link rel="stylesheet" href="/css/base.css?v=20260803-16" />
     <link rel="stylesheet" href="/css/aero-components.css?v=20260803-16" />
     <link rel="stylesheet" href="/css/demo.css?v=20260803-26" />
-    <link rel="stylesheet" href="/css/photos.css?v=20260803-6" />
+    <link rel="stylesheet" href="/css/photos.css?v=20260807-7" />
   </head>
   <body>
     <main class="photos-stage">
-      <section class="aero-window gallery-window" aria-labelledby="gallery-title">
+      <div class="gallery-shell">
+        <div class="y2k-frame-decor" aria-hidden="true">
+          <img class="y2k-frame-decor__sprite y2k-frame-decor__sprite--songcat" src="/assets/photos/decor/songcat.gif" alt="" />
+          <img class="y2k-frame-decor__sprite y2k-frame-decor__sprite--handheld" src="/assets/photos/decor/handheld-cat.gif" alt="" />
+          <img class="y2k-frame-decor__sprite y2k-frame-decor__sprite--bear" src="/assets/photos/decor/pink-bear.gif" alt="" />
+          <img class="y2k-frame-decor__sprite y2k-frame-decor__sprite--dreaming" src="/assets/photos/decor/dreaming-cat.gif" alt="" />
+          <img class="y2k-frame-decor__sprite y2k-frame-decor__sprite--blast" src="/assets/photos/decor/yellow-blast.gif" alt="" />
+        </div>
+
+        <section class="aero-window gallery-window" aria-labelledby="gallery-title">
         <div class="aero-window__titlebar">
           <div class="aero-window__title">
             <img class="gallery-window__icon" src="/assets/windows-live-photo-gallery-logo.webp" alt="" aria-hidden="true" />
             <span id="gallery-title">Windows Photo Gallery</span>
+            <img class="y2k-title-mascot" src="/assets/photos/decor/cat-icon.gif" alt="" aria-hidden="true" />
           </div>
           <div class="aero-window__controls" aria-label="Window controls">
             <button class="aero-caption-button" type="button" aria-label="Minimize"></button>
@@ -33,70 +43,263 @@
           <span>Gallery</span>
           <span class="gallery-window__toolbar-separator" aria-hidden="true"></span>
           <span>Pictures and Videos</span>
+          <img class="y2k-toolbar-logo" src="/assets/photos/decor/blue-logo.gif" alt="" aria-hidden="true" />
         </div>
 
         <div class="aero-window__body gallery-window__body">
-          <section class="gallery-group" aria-labelledby="gallery-2026">
-            <h2 id="gallery-2026"><span>2026 - 6 items</span></h2>
-            <div class="gallery-grid">
-              <figure class="gallery-item gallery-item--video">
-                <a class="gallery-item__media" href="/assets/popups/popup-01-animation.gif"><img src="/assets/popups/popup-01-animation.gif" alt="Small blue character dancing on a platform" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--video">
-                <a class="gallery-item__media" href="/assets/popups/popup-02-astd0w.gif"><img src="/assets/popups/popup-02-astd0w.gif" alt="Costumed character dancing outdoors" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--video">
-                <a class="gallery-item__media" href="/assets/popups/popup-06-kasane-teto.gif"><img src="/assets/popups/popup-06-kasane-teto.gif" alt="Animated face inside a pear" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--photo">
-                <a class="gallery-item__media" href="/assets/arx-profile.jpg"><img src="/assets/arx-profile.jpg" alt="ARX profile portrait" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--photo gallery-item--wide">
-                <a class="gallery-item__media" href="/assets/arx-sushi.png"><img src="/assets/arx-sushi.png" alt="ARX enjoying sushi" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--photo">
-                <a class="gallery-item__media" href="/assets/audio/candy-candy-cover.jpg"><img src="/assets/audio/candy-candy-cover.jpg" alt="Candy Candy cover art" /></a>
-              </figure>
-            </div>
+          <section class="device-gallery" aria-labelledby="device-asha-210">
+            <header class="device-gallery__header">
+              <div>
+                <span class="device-gallery__eyebrow">Taken on</span>
+                <h2 id="device-asha-210">Nokia Asha 210</h2>
+              </div>
+              <img class="device-gallery__logo" src="/assets/photos/nokia.svg" alt="Nokia" />
+            </header>
+
+            <section class="gallery-group" aria-labelledby="asha-2026">
+              <h3 id="asha-2026"><span>2026 - 6 items</span></h3>
+              <div class="gallery-grid">
+                <figure class="gallery-item gallery-item--video">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-asha-210/video-0003.webm" aria-label="Open Video 0003" aria-describedby="video-info-0003">
+                    <video autoplay muted loop playsinline preload="auto" aria-hidden="true">
+                      <source src="/assets/photos/nokia-asha-210/video-0003.webm" type="video/webm" />
+                    </video>
+                  </a>
+                  <figcaption class="gallery-tooltip" id="video-info-0003">
+                    <strong>Video details</strong>
+                    <span><b>Camera:</b> Nokia Asha 210</span>
+                    <span><b>Recorded:</b> Aug 6, 2026 · 9:45 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-asha-210/photo-0032.jpg" aria-describedby="photo-info-0032"><img src="/assets/photos/nokia-asha-210/photo-0032.jpg" alt="Brown and white canine fursuiter posing at night" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-0032">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Asha 210</span>
+                    <span><b>Taken:</b> Aug 6, 2026 · 9:31 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-asha-210/photo-0033.jpg" aria-describedby="photo-info-0033"><img src="/assets/photos/nokia-asha-210/photo-0033.jpg" alt="Brown and white canine fursuiter standing with arms open at night" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-0033">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Asha 210</span>
+                    <span><b>Taken:</b> Aug 6, 2026 · 9:30 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-asha-210/photo-0031.jpg" aria-describedby="photo-info-0031"><img src="/assets/photos/nokia-asha-210/photo-0031.jpg" alt="Close-up portrait of a brown and white canine fursuiter at night" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-0031">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Asha 210</span>
+                    <span><b>Taken:</b> Aug 6, 2026 · 9:29 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-asha-210/photo-2026-07-31-22-00-35.jpg" aria-describedby="photo-info-jul-31"><img src="/assets/photos/nokia-asha-210/photo-2026-07-31-22-00-35.jpg" alt="Close-up portrait of a gray wolf fursuiter" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-jul-31">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Asha 210</span>
+                    <span><b>Taken:</b> Jul 31, 2026 · 10:00 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-asha-210/photo-0014.jpg" aria-describedby="photo-info-0014"><img src="/assets/photos/nokia-asha-210/photo-0014.jpg" alt="Blue and yellow fursuiter wearing bright glasses and waving" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-0014">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Asha 210</span>
+                    <span><b>Taken:</b> Jul 31, 2026 · 8:04 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
           </section>
 
-          <section class="gallery-group" aria-labelledby="gallery-2025">
-            <h2 id="gallery-2025"><span>2025 - 10 items</span></h2>
-            <div class="gallery-grid">
-              <figure class="gallery-item gallery-item--photo gallery-item--wide">
-                <a class="gallery-item__media" href="/assets/social-preview.png"><img src="/assets/social-preview.png" alt="Preview of the ARX website" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--photo">
-                <a class="gallery-item__media" href="/assets/maimai/arx-avatar.jpg"><img src="/assets/maimai/arx-avatar.jpg" alt="ARX maimai avatar" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--photo gallery-item--wide">
-                <a class="gallery-item__media" href="/assets/web-stamps/silly.jpg"><img src="/assets/web-stamps/silly.jpg" alt="Silly web stamp" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--photo">
-                <a class="gallery-item__media" href="/assets/web-stamps/rgd9okc.jpg"><img src="/assets/web-stamps/rgd9okc.jpg" alt="Retro web stamp" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--photo">
-                <a class="gallery-item__media" href="/assets/web-stamps/y2k-pbbaqr-8.jpg"><img src="/assets/web-stamps/y2k-pbbaqr-8.jpg" alt="Y2K web stamp" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--video">
-                <a class="gallery-item__media" href="/assets/popups/popup-03-butt.gif"><img src="/assets/popups/popup-03-butt.gif" alt="Blue animated character against a circular background" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--video">
-                <a class="gallery-item__media" href="/assets/popups/popup-04-ezgif.gif"><img src="/assets/popups/popup-04-ezgif.gif" alt="Blue costumed character animation" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--video">
-                <a class="gallery-item__media" href="/assets/popups/popup-05-look-at-me.gif"><img src="/assets/popups/popup-05-look-at-me.gif" alt="Close-up blue animated character" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--video">
-                <a class="gallery-item__media" href="/assets/web-stamps/dancing-kitty-cat.gif"><img src="/assets/web-stamps/dancing-kitty-cat.gif" alt="Dancing cat animation" /></a>
-              </figure>
-              <figure class="gallery-item gallery-item--video">
-                <a class="gallery-item__media" href="/assets/web-stamps/weekender-girl-remix.gif"><img src="/assets/web-stamps/weekender-girl-remix.gif" alt="Weekender Girl remix animation" /></a>
-              </figure>
-            </div>
+          <section class="device-gallery" aria-labelledby="device-lumia-1020">
+            <header class="device-gallery__header">
+              <div>
+                <span class="device-gallery__eyebrow">Taken on</span>
+                <h2 id="device-lumia-1020">Nokia Lumia 1020</h2>
+              </div>
+              <img class="device-gallery__logo" src="/assets/photos/nokia.svg" alt="" aria-hidden="true" />
+            </header>
+
+            <section class="gallery-group" aria-labelledby="lumia-2026">
+              <h3 id="lumia-2026"><span>2026 - 8 items</span></h3>
+              <div class="gallery-grid">
+                <figure class="gallery-item gallery-item--photo gallery-item--portrait">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-lumia-1020/wp-20260619-035.jpg" aria-describedby="photo-info-lumia-035"><img src="/assets/photos/nokia-lumia-1020/wp-20260619-035.jpg" alt="Black and white canine fursuiter looking up at the camera" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-lumia-035">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Lumia 1020</span>
+                    <span><b>Taken:</b> Jun 19, 2026 · 9:07 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--portrait">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-lumia-1020/wp-20260619-034.jpg" aria-describedby="photo-info-lumia-034"><img src="/assets/photos/nokia-lumia-1020/wp-20260619-034.jpg" alt="Black and white canine fursuiter making peace signs" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-lumia-034">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Lumia 1020</span>
+                    <span><b>Taken:</b> Jun 19, 2026 · 9:07 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--portrait">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-lumia-1020/wp-20260619-033.jpg" aria-describedby="photo-info-lumia-033"><img src="/assets/photos/nokia-lumia-1020/wp-20260619-033.jpg" alt="Brown and white canine fursuiter posing with raised arms" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-lumia-033">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Lumia 1020</span>
+                    <span><b>Taken:</b> Jun 19, 2026 · 9:06 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--portrait">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-lumia-1020/wp-20260619-027.jpg" aria-describedby="photo-info-lumia-027"><img src="/assets/photos/nokia-lumia-1020/wp-20260619-027.jpg" alt="Orange fox fursuiter holding both paws toward the camera" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-lumia-027">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Lumia 1020</span>
+                    <span><b>Taken:</b> Jun 19, 2026 · 8:45 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-lumia-1020/wp-20260619-026.jpg" aria-describedby="photo-info-lumia-026"><img src="/assets/photos/nokia-lumia-1020/wp-20260619-026.jpg" alt="Turquoise canine and bird fursuiters posing together" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-lumia-026">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Lumia 1020</span>
+                    <span><b>Taken:</b> Jun 19, 2026 · 8:44 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--video gallery-item--portrait">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-lumia-1020/hl-2026-06-19-20-39-14.mp4" aria-label="Open Lumia Video from June 19, 2026" aria-describedby="video-info-lumia-203914">
+                    <video autoplay muted loop playsinline preload="auto" aria-hidden="true">
+                      <source src="/assets/photos/nokia-lumia-1020/hl-2026-06-19-20-39-14-preview.webm" type="video/webm" />
+                    </video>
+                  </a>
+                  <figcaption class="gallery-tooltip" id="video-info-lumia-203914">
+                    <strong>Video details</strong>
+                    <span><b>Camera:</b> Nokia Lumia 1020</span>
+                    <span><b>Recorded:</b> Jun 19, 2026 · 8:39 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-lumia-1020/wp-20260619-013.jpg" aria-describedby="photo-info-lumia-013"><img src="/assets/photos/nokia-lumia-1020/wp-20260619-013.jpg" alt="Close-up of a blue and yellow fursuiter wearing bright glasses" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-lumia-013">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Lumia 1020</span>
+                    <span><b>Taken:</b> Jun 19, 2026 · 8:33 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/nokia-lumia-1020/wp-20260619-011.jpg" aria-describedby="photo-info-lumia-011"><img src="/assets/photos/nokia-lumia-1020/wp-20260619-011.jpg" alt="Blue and yellow and turquoise fursuiters posing together" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-lumia-011">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> Nokia Lumia 1020</span>
+                    <span><b>Taken:</b> Jun 19, 2026 · 8:15 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+          </section>
+
+          <section class="device-gallery device-gallery--empty" aria-labelledby="device-sony-xperia-1v">
+            <header class="device-gallery__header">
+              <div>
+                <span class="device-gallery__eyebrow">Taken on</span>
+                <h2 id="device-sony-xperia-1v">Sony Xperia 1 V</h2>
+              </div>
+              <img class="device-gallery__logo" src="/assets/photos/sony-xperia-1v/sony-logo.svg" alt="Sony" />
+            </header>
+            <p class="device-gallery__empty-message">
+              <img src="/assets/photos/decor/striped-cat.gif" alt="" aria-hidden="true" />
+              <span>No photos yet.</span>
+            </p>
+          </section>
+
+          <section class="device-gallery" aria-labelledby="device-new-nintendo-2ds-xl">
+            <header class="device-gallery__header">
+              <div>
+                <span class="device-gallery__eyebrow">Taken on</span>
+                <h2 id="device-new-nintendo-2ds-xl">New Nintendo 2DS XL</h2>
+              </div>
+              <img class="device-gallery__logo device-gallery__logo--nintendo" src="/assets/photos/new-nintendo-2ds-xl/nintendo-logo.svg" alt="Nintendo" />
+            </header>
+
+            <section class="gallery-group" aria-labelledby="nintendo-2024">
+              <h3 id="nintendo-2024"><span>2024 - 4 items</span></h3>
+              <div class="gallery-grid">
+                <figure class="gallery-item gallery-item--video gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/new-nintendo-2ds-xl/hni-0045.mp4" aria-label="Open Nintendo 2DS XL Video HNI 0045" aria-describedby="video-info-nintendo-0045">
+                    <video autoplay muted loop playsinline preload="auto" aria-hidden="true">
+                      <source src="/assets/photos/new-nintendo-2ds-xl/hni-0045-preview.webm" type="video/webm" />
+                    </video>
+                  </a>
+                  <figcaption class="gallery-tooltip" id="video-info-nintendo-0045">
+                    <strong>Video details</strong>
+                    <span><b>Camera:</b> New Nintendo 2DS XL</span>
+                    <span><b>Recorded:</b> Jun 8, 2024 · 6:53 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/new-nintendo-2ds-xl/hni-0044.jpg" aria-describedby="photo-info-nintendo-0044"><img src="/assets/photos/new-nintendo-2ds-xl/hni-0044.jpg" alt="Close-up of a blue and purple fursuiter" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-nintendo-0044">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> New Nintendo 2DS XL</span>
+                    <span><b>Taken:</b> Jun 8, 2024 · 6:52 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/new-nintendo-2ds-xl/hni-0040.jpg" aria-describedby="photo-info-nintendo-0040"><img src="/assets/photos/new-nintendo-2ds-xl/hni-0040.jpg" alt="Green dinosaur fursuiter wearing star-shaped glasses" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-nintendo-0040">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> New Nintendo 2DS XL</span>
+                    <span><b>Taken:</b> Jun 8, 2024 · 6:10 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/new-nintendo-2ds-xl/hni-0039.jpg" aria-describedby="photo-info-nintendo-0039"><img src="/assets/photos/new-nintendo-2ds-xl/hni-0039.jpg" alt="Blue and green and orange and cream fursuiters posing together" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-nintendo-0039">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> New Nintendo 2DS XL</span>
+                    <span><b>Taken:</b> Jun 8, 2024 · 6:10 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="gallery-group" aria-labelledby="nintendo-2023">
+              <h3 id="nintendo-2023"><span>2023 - 1 item</span></h3>
+              <div class="gallery-grid">
+                <figure class="gallery-item gallery-item--photo gallery-item--wide">
+                  <a class="gallery-item__media" href="/assets/photos/new-nintendo-2ds-xl/hni-0018.jpg" aria-describedby="photo-info-nintendo-0018"><img src="/assets/photos/new-nintendo-2ds-xl/hni-0018.jpg" alt="Small black and tan puppy sitting on a wooden floor" /></a>
+                  <figcaption class="gallery-tooltip" id="photo-info-nintendo-0018">
+                    <strong>Photo details</strong>
+                    <span><b>Camera:</b> New Nintendo 2DS XL</span>
+                    <span><b>Taken:</b> May 26, 2023 · 4:32 PM</span>
+                    <span><b>People:</b> Not tagged</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
           </section>
         </div>
-      </section>
+        </section>
+      </div>
 
       <nav class="profile-nav" aria-label="Primary navigation">
         <a class="profile-nav__button" href="https://arxu.gay/">Home</a>
