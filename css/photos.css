@@ -180,6 +180,11 @@ body {
   opacity: 0.9;
 }
 
+.device-gallery__logo--cyber-shot {
+  width: 118px;
+  opacity: 0.9;
+}
+
 .device-gallery--empty {
   padding-bottom: 14px;
 }
@@ -443,6 +448,10 @@ body {
 
   .device-gallery__logo {
     width: 58px;
+  }
+
+  .device-gallery__logo--cyber-shot {
+    width: 92px;
   }
 
   .y2k-title-mascot {
